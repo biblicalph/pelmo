@@ -1,5 +1,6 @@
 ## About this Project
-This project is my solution to a technical assessment challenge for a position at Pelmorex
+This project implements a full stack application using `React`, `Redux` (not really required though) and `NodeJS`.
+The React application uses `React` hooks exclusively whiles the `NodeJS` app is built with `Express`.
 
 
 ### Running the Application
