@@ -1,0 +1,23 @@
+.form-group {
+  margin-bottom: 4%;
+}
+.form-group label, .form-group input {
+  display: block;
+}
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+.form-group input {
+  width: 100%;
+  border: 2px solid #ededed;
+  border-radius: 2px;
+  height: 35px;
+  padding: 5px;
+  font-size: 0.9rem;
+}
+.form-error {
+  color: darkred;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}

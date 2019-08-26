@@ -1,0 +1,12 @@
+
+export const REQUEST_GALLERY = 'REQUEST_GALLERY';
+
+export const RECEIVE_GALLERY = 'RECEIVE_GALLERY';
+
+export const REJECT_GALLERY = 'REJECT_GALLERY';
+
+export const REQUEST_PHOTO = 'REQUEST_PHOTO';
+
+export const RECEIVE_PHOTO = 'RECEIVE_PHOTO';
+
+export const REJECT_PHOTO = 'REJECT_PHOTO';

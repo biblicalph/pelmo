@@ -1,0 +1,36 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  margin: 3% auto;
+  width: 90%;
+}
+.contact-container h2 {
+  margin-bottom: 3%;
+}
+.contact-container button {
+  background-color: maroon;
+  color: #fff;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+.contact-container button:disabled {
+  background-color: #fff;
+  color: #333;
+}
+.contact-form-message {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  margin-bottom: 3%;
+}
+.form-error-message {
+  background: #aa0000;
+}
+.form-success-message {
+  background: #00bfff;
+}
+@media screen and (min-width: 768px) {
+  .contact-container {
+    width: 40%;
+  }
+}

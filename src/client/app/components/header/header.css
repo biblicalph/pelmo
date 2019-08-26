@@ -1,0 +1,37 @@
+.navbar {
+  display: flex; 
+  align-items: center;
+  background: maroon;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  margin-left: auto;
+}
+
+.navbar-menu-item {
+  display: inline-block;
+  padding: 10px;
+}
+.navbar-menu-item-link, .logo {
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+.logo {
+  font-size: 1.5rem;
+}
+.navbar-menu-item-link:hover, .logo:hover {
+  cursor: pointer;
+}
+.navbar-menu-item-link:hover {
+  background: #fff;
+  color: #333;
+}
+@media screen and (min-width: 768px) {
+  .navbar {
+    padding-left: 10px;
+    padding-right: 50px;
+  }
+}

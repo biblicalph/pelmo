@@ -1,0 +1,52 @@
+.home-container {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  align-items: flex-start;
+}
+.home-container h2 {
+  margin-bottom: 5%;
+}
+.home-card-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.home-city-card {
+  border: 1px solid #ccc;
+  background: #ededed;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+.home-city-card a {
+  text-decoration: none;
+  color: #333;
+}
+.home-city-card a:hover {
+  text-decoration: underline;
+}
+.home-city-card-img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+.home-city-card-footer {
+  padding: 8px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 768px) {
+  .home-container {
+    margin: 3% auto;
+    width: 70%;
+  }
+  .home-card-wrapper {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .home-city-card {
+    width: 450px;
+  }
+}

@@ -1,0 +1,14 @@
+.photo-detail {
+  display: flex;
+  flex-direction: column;
+  margin: 3% auto;
+  border: 3px solid #fefefe;
+}
+.photo-detail span {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 2%;
+}
+.photo-detail-loading-indicator {
+  margin-top: 10%;
+}
