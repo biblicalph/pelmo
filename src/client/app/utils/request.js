@@ -9,6 +9,11 @@ export const makeFetch = async ({ url, method = 'GET', headers, data }) => {
 
   const resp = await fetch(url, options);
 
+  const isSuccessful = resp.status >= 200 && resp.status < 300;
+  if (!isSuccessful) {
+    throw new Error(resp.statusText || `${method} ${url} failed`);
+  }
+  
   return resp.json();
 };
 

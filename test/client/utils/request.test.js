@@ -13,6 +13,8 @@ describe('Request util spec', () => {
 
   beforeEach(() => {
     fetchResp = {
+      status: 200,
+      statusText: '',
       json: jest.fn().mockImplementation(() => Promise.resolve(respFromServer))
     };
     fetchMock = global.fetch = jest.fn().mockImplementation(() => Promise.resolve(fetchResp));
@@ -51,6 +53,18 @@ describe('Request util spec', () => {
         method: 'POST',
         body: JSON.stringify(data)
       });
+    });
+
+    it('should return error if request was unsuccessful', async () => {
+      fetchResp.status = 400;
+      fetchResp.statusText = 'Validation error';
+      expect.assertions(1);
+
+      try {
+        await makeFetch({ url: baseUrl });
+      } catch (error) {
+        expect(error.message).toBe(fetchResp.statusText);
+      }
     });
   });
 
